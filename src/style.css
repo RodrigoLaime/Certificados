@@ -20,7 +20,7 @@
     background-color: var(--color-secondary);
 }
 
-main {
+.main {
     position: relative;
     width: 100%;
 }

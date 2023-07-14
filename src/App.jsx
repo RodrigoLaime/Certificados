@@ -26,7 +26,7 @@ const App = () => {
         setActiveLink(link);
     };
     return (
-        <main>
+        <div className='main'>
             <BrowserRouter >
                 <nav>
                     <div className='container-menu'>
@@ -49,7 +49,7 @@ const App = () => {
                     <Route path="/node" element={<Nodejs />} />
                 </Routes>
             </BrowserRouter>
-        </main>
+        </div>
     )
 }
 
