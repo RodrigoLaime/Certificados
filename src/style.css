@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: sans-serif;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-background: #fcfff7;
+    --color-primary: #e53d00;
+    --color-secondary: #ffe900;
+    --color-tertiary: #21a0a0;
+    --color-accent: #046865;
+}
+
+.active {
+    background-color: var(--color-secondary);
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-accent);
+}
+nav .container-menu {
+    border-bottom: 2px solid var(--color-secondary);
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 15px;
+}
+nav .container-menu div{
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav .container-menu div:hover {
+    border: 2px solid var(--color-background)
+}
+
+nav div:active {
+    background-color: var(--color-background)
+}
+
+nav div .a {
+    text-decoration: none;
+    color: var(--color-background);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+}
+
