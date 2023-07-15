@@ -30,9 +30,9 @@ nav {
     top: 0;
     width: 100%;
     background-color: var(--color-accent);
+    border-bottom: 2px solid var(--color-secondary);  
 }
 nav .container-menu {
-    border-bottom: 2px solid var(--color-secondary);  
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
