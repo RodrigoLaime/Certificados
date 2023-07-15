@@ -1,9 +1,11 @@
 import React from 'react'
 import '../components.css';
+import image1 from "../../asset/logica/diploma-pensamiento-logico-2020_page-0001.jpg"
+import image2 from "../../asset/logica/diploma-pensamiento-logico_page-0001.jpg"
 const Logica = () => {
   const imgLogica = [
-    "../asset/logica/diploma-pensamiento-logico-2020_page-0001.jpg",
-    "../asset/logica/diploma-pensamiento-logico_page-0001.jpg"
+    image1,
+    image2
   ]
   const imge = imgLogica;
   return (

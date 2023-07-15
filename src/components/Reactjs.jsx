@@ -1,15 +1,25 @@
 import React from 'react'
 import '../components.css';
+
+import image1 from "../../asset/React/diploma-react-estado.jpg";
+import image2 from "../../asset/React/diploma-react-hooks.jpg";
+import image3 from "../../asset/React/diploma-react-patrones-render.jpg";
+import image4 from "../../asset/React/diploma-react-practico.jpg";
+import image5 from "../../asset/React/diploma-react-redux-profesional.jpg";
+import image6 from "../../asset/React/diploma-react-router.jpg";
+import image7 from "../../asset/React/diploma-react-state-machines.jpg";
+import image8 from "../../asset/React/diploma-react.jpg"
+
 const Reactjs = () => {
   const imgReact = [
-    "../asset/React/diploma-react-estado.jpg",
-    "../asset/React/diploma-react-hooks.jpg",
-    "../asset/React/diploma-react-patrones-render.jpg",
-    "../asset/React/diploma-react-practico.jpg",
-    "../asset/React/diploma-react-redux-profesional.jpg",
-    "../asset/React/diploma-react-router.jpg",
-    "../asset/React/diploma-react-state-machines.jpg",
-    "../asset/React/diploma-react.jpg"
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8
   ]
   const imge = imgReact;
   return (

@@ -1,14 +1,21 @@
 import React from 'react';
 import '../components.css';
 
+import image1 from "../../asset/Front/diploma-dom.jpg";
+import image2 from "../../asset/Front/diploma-flexbox-css-grid.jpg";
+import image3 from "../../asset/Front/diploma-html-css.jpg";
+import image4 from "../../asset/Front/diploma-html-practico.jpg";
+import image5 from "../../asset/Front/diploma-mobile-first.jpg";
+import image6 from "../../asset/Front/diploma-web-components-javascript.jpg"
+
 const Front = () => {
   const imgFront = [
-    "../asset/Front/diploma-dom.jpg",
-    "../asset/Front/diploma-flexbox-css-grid.jpg",
-    "../asset/Front/diploma-html-css.jpg",
-    "../asset/Front/diploma-html-practico.jpg",
-    "../asset/Front/diploma-mobile-first.jpg",
-    "../asset/Front/diploma-web-components-javascript.jpg"
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6
   ];
   const imge = imgFront;
   return (

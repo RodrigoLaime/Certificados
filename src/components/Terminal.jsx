@@ -1,9 +1,11 @@
 import React from 'react'
 import '../components.css';
+import image1 from "../../asset/terminal/diploma-git-github.jpg";
+import image2 from "../../asset/terminal/diploma-npm.jpg"
 const Terminal = () => {
   const imgTerminal = [
-    "../asset/terminal/diploma-git-github.jpg",
-    "../asset/terminal/diploma-npm.jpg"
+    image1,
+    image2
   ]
   const imge = imgTerminal;
   return (

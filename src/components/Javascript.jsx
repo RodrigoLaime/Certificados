@@ -1,17 +1,29 @@
 import React from 'react'
 import '../components.css';
+import image1 from "../../asset/Javascript/diploma-api-practico.jpg";
+import image2 from "../../asset/Javascript/diploma-api-profesional.jpg";
+import image3 from "../../asset/Javascript/diploma-api.jpg";
+import image4 from "../../asset/Javascript/diploma-arrays.jpg";
+import image5 from "../../asset/Javascript/diploma-asincronismo-js.jpg";
+import image6 from "../../asset/Javascript/diploma-basico-javascript.jpg";
+import image7 from "../../asset/Javascript/diploma-estructuras-datos.jpg";
+import image8 from "../../asset/Javascript/diploma-javascript-poo.jpg";
+import image9 from "../../asset/Javascript/diploma-javascript-practico.jpg";
+import image10 from "../../asset/Javascript/diploma-oop.jpg"
+
 const Javascript = () => {
+
   const imgJavascript = [
-    "../asset/Javascript/diploma-api-practico.jpg",
-    "../asset/Javascript/diploma-api-profesional.jpg",
-    "../asset/Javascript/diploma-api.jpg",
-    "../asset/Javascript/diploma-arrays.jpg",
-    "../asset/Javascript/diploma-asincronismo-js.jpg",
-    "../asset/Javascript/diploma-basico-javascript.jpg",
-    "../asset/Javascript/diploma-estructuras-datos.jpg",
-    "../asset/Javascript/diploma-javascript-poo.jpg",
-    "../asset/Javascript/diploma-javascript-practico.jpg",
-    "../asset/Javascript/diploma-oop.jpg"
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10
   ]
   const imge = imgJavascript;
   return (

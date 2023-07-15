@@ -32,7 +32,7 @@ nav {
     background-color: var(--color-accent);
 }
 nav .container-menu {
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);  
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
@@ -50,11 +50,7 @@ nav .container-menu div{
 
 nav .container-menu div:hover {
     border: 2px solid var(--color-background)
-}
-
-nav div:active {
-    background-color: var(--color-background)
-}
+}   
 
 nav div .a {
     text-decoration: none;

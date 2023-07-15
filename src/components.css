@@ -43,10 +43,10 @@
 }
 
 .container-img {
-    padding: 100px;
+    padding: 100px 0;
     max-width: 1240px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 }
 
@@ -74,4 +74,14 @@
 
 .img-div:hover img {
     transform: scale(1.1);
+}
+@media (min-width: 575px){
+    .container-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px){
+    .container-img {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
