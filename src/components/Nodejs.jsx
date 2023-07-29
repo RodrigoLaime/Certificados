@@ -12,6 +12,11 @@ import '../components.css';
 
 const Nodejs = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
   const imgNode = [
     image1,
     image2,
@@ -22,10 +27,6 @@ const Nodejs = () => {
     image7,
     image8
   ];
-
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
-  };
 
   return (
     <div className='container-file'>
