@@ -51,6 +51,7 @@
 }
 
 .img-div {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +62,7 @@
     transition: border-color 0.3s ease-in-out;
 }
 
-.img-div:hover {
+.img-div:hover, .buton-img:hover {
     border-color: var(--color-secondary);
 }
 
@@ -71,10 +72,20 @@
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
-
-.img-div:hover img {
-    transform: scale(1.1);
+.buton-img{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 20px;
+    color: #21a0a0
 }
+.buton-img:hover{
+    color: #ffe900;
+}
+
+/* .img-div:hover img {
+    transform: scale(1.1);
+} */
 @media (min-width: 575px){
     .container-img {
         grid-template-columns: repeat(2, 1fr);

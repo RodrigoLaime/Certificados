@@ -14,12 +14,12 @@ const App = () => {
 
     const links = [
         { to: '/', label: 'Inicio' },
-        { to: '/javascript', label: 'Javascrit' },
+        { to: '/javascript', label: 'JavaScript' },
         { to: '/react', label: 'React' },
         { to: '/front', label: 'Frontend' },
         { to: '/logica', label: 'Logica' },
         { to: '/terminal', label: 'Terminal' },
-        { to: '/node', label: 'NodeJS' },
+        { to: '/node', label: 'Node.js' },
     ];
 
     const handleLinkClick = (link) => {
