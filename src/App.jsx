@@ -10,7 +10,8 @@ import Inicio from './components/Inicio.jsx'
 import './style.css'
 
 const App = () => {
-    const [activeLink, setActiveLink] = useState('');
+    const [activeLink, setActiveLink] = useState('/');
+    const [activeMenu, setActiveMenu] = useState(false)
 
     const links = [
         { to: '/', label: 'Inicio' },
@@ -22,16 +23,22 @@ const App = () => {
         { to: '/node', label: 'Node.js' },
     ];
 
+
     const handleLinkClick = (link) => {
         setActiveLink(link);
+        console.log(link)
     };
     return (
         <div className='main'>
             <BrowserRouter >
-                <nav>
+                <nav className={activeMenu ? '' : 'oculto'}>
+                    <div className='icon'>
+                        <button type='button' className='iconMenu' onClick={() => setActiveMenu(!activeMenu)}><i class="fa-solid fa-bars"></i></button>
+                    </div>
                     <div className='container-menu'>
                         {links.map((link, index) => (
                             <div key={index} className={activeLink === link.to ? 'active' : ''}>
+                                {/* <div key={index} className={link.to === '/' ? 'active' : activeLink === link.to ? 'active' : ''}> */}
                                 <Link className='a' to={link.to} onClick={() => handleLinkClick(link.to)}>
                                     {link.label}
                                 </Link>

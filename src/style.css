@@ -25,37 +25,103 @@
     width: 100%;
 }
 
-nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: var(--color-accent);
-    border-bottom: 2px solid var(--color-secondary);  
-}
-nav .container-menu {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-    padding: 15px;
-}
-nav .container-menu div{
-    padding: 5px 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
+.oculto {
+    transform: translateX(-200px);
 }
 
-nav .container-menu div:hover {
+nav {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background-color: var(--color-accent);
+    border-right: 1px solid #ffe900;
+}
+
+nav .icon {
+    width: 220px;
+    display: flex;
+    justify-content: right;
+}
+
+nav .iconMenu {
+    font-size: 20px;
+    color: #fcfff7;
+    background-color: transparent;
+    border: none;
+}
+
+
+nav .container-menu {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+nav .container-menu div {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* nav .container-menu div:hover {
     border: 2px solid var(--color-background)
-}   
+} */
 
 nav div .a {
     text-decoration: none;
     color: var(--color-background);
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* padding: 5px; */
 }
 
+@media (min-width: 716px) {
+    nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: var(--color-accent);
+        height: auto;
+        border-bottom: 2px solid var(--color-secondary);
+        border-right: none;
+    }
+
+    nav .container-menu {
+        /* width: 100vw; */
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        padding: 15px;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    nav .container-menu div {
+        padding: 5px 10px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav .container-menu div:hover {
+        border: 2px solid var(--color-background)
+    }
+    nav .icon{
+        display: none;
+    }
+    .oculto{
+        transform: none
+    }
+
+    nav div .a {
+        text-decoration: none;
+        color: var(--color-background);
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
