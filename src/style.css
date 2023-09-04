@@ -30,7 +30,7 @@
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     width: 200px;
@@ -38,7 +38,7 @@ nav {
     padding: 20px;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     background-color: var(--color-accent);
-    border-right: 1px solid #ffe900;
+    border-right: 2px solid #ffe900;
 }
 
 nav .icon {
@@ -111,10 +111,12 @@ nav div .a {
     nav .container-menu div:hover {
         border: 2px solid var(--color-background)
     }
-    nav .icon{
+
+    nav .icon {
         display: none;
     }
-    .oculto{
+
+    .oculto {
         transform: none
     }
 
